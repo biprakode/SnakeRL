@@ -1,0 +1,64 @@
+# ==========================================
+# 1. IDEs & Editors (PyCharm / JetBrains)
+# ==========================================
+# Excludes all PyCharm project settings and configuration files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+
+# ==========================================
+# 2. Python Bytecode & Cache Files
+# ==========================================
+# Excludes compiled Python files and cache folders
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# 3. Virtual Environments
+# ==========================================
+# Excludes local environments and dependencies
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ==========================================
+# 4. Reinforcement Learning & Model Artifacts
+# ==========================================
+# Excludes saved neural network weights, checkpoints, logs, and plots
+*.pth
+*.pt
+*.onnx
+*.h5
+*.pkl
+*.npy
+*.npz
+model/
+models/
+checkpoints/
+logs/
+runs/
+tensorboard/
+
+# ==========================================
+# 5. Testing & Coverage Outputs
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.noserc
+nosetests.xml
+
+# ==========================================
+# 6. Environment Variables & System Files
+# ==========================================
+.env
+.env.local
+.DS_Store
+Thumbs.db
