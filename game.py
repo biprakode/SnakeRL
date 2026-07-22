@@ -124,14 +124,6 @@ class SnakeGame:
         return feature_vec
 
 
-    def state_to_index(self, feature_vec):
-        # state vector to bin
-        index = 0
-        for bit in feature_vec.values():
-            index = (index << 1) | int(bit)
-        return index   # 0 to 2047
-
-
     def move(self , point :Point , action):
         # action - [straight , left , right]
         direction_wheel = [Direction.RIGHT , Direction.DOWN , Direction.LEFT , Direction.UP]
