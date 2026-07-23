@@ -101,7 +101,7 @@ class SnakeGame:
         self.clock.tick(SPEED)
         return reward, game_over, self.score
 
-    def get_state(self , action):
+    def get_state(self):
         feature_vec = {}
 
         st , st_dir = self.move(self.head , (1, 0 , 0))
